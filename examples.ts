@@ -37,13 +37,19 @@ type Attacks = string[];
 type Health = number;
 type SoulsDropped = number;
 type ItemDrops = string[];
+type Quote = {
+    fightBegin: String,
+    halfHealth: String | null,
+    finalWords?: Number
+}
 
 type BossFight = {
     name: BossName,
     attacks: Attacks,
     health: Health,
     souls: SoulsDropped,
-    items?: ItemDrops
+    items?: ItemDrops,
+    quote?: Quote
   }
 
 let eldenBeast:BossFight = {
@@ -54,5 +60,11 @@ let eldenBeast:BossFight = {
         "that one annoying attack with all the lightning"
     ],
     health: 999,
-    souls: 20000
+    souls: 20000,
+    items: ["trophies", "bananas"],
+    quote: {
+        fightBegin: "hahahaha fool!",
+        halfHealth: null,
+        finalWords: 3
+    }
 };

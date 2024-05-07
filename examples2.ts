@@ -1,3 +1,5 @@
+let fruit="banana"
+// fruit=7
 // Example 1: Function Returning a Number
 function getTime(): number {
     return new Date().getTime();
@@ -16,3 +18,8 @@ function addMyNumbers(firstNumber: number, secondNumber: number):number {
 let sum = (firstNumber: number, secondNumber: number):number => {
     return firstNumber + secondNumber;
 }
+
+let thing:number = 5;
+
+console.log(addMyNumbers(5,"6"))
+console.log(typeof addMyNumbers(5,"6"))
